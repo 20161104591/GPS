@@ -8,9 +8,27 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("xiaoyifan\n");
-    printf("Hello, World!\n");
-    return 0;
+int main()
+{
+    int i,j,n,m;
+    int a[10];
+    printf("请输入10个数字:\n");
+    for(i=1;i<=11;i++)
+    {
+        scanf("%d\n",&a[i]);
+    }
+    for(j=0;j<=n-1;j++)
+    {
+        for(i=0;i<=n-1;i++)
+        {
+            if(a[i]>a[i+1])
+            {
+                m=a[i];
+                a[i]=a[i+1];
+                a[i+1]=m;
+            }
+        }
+    }
+            printf("%d",a[i]);
+        return 0;
 }
